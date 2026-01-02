@@ -10,5 +10,6 @@ class Days_to_months
         months = days / 30;
         remaining_days = days % 30;
         System.out.println(String.format("%d days is same as %d months and %d days",days,months,remaining_days));
+        xx.close();
     }
 }
