@@ -1,0 +1,24 @@
+import java.util.*;
+class TowerofHanoi
+{
+    static void TOH(int n,char fromrod,char torod,char auxrod)
+    {
+        if(n==1)
+        {
+            System.out.printf("THe disk 1 has been moved from %c rod to %c rod\n",fromrod,torod);
+            return;
+        }
+        TOH(n-1,fromrod,auxrod,torod);
+        System.out.printf("THe disk %d has been moved from %c rod to %c rod\n",n,fromrod,torod);
+        TOH(n-1,auxrod,torod,fromrod);
+    }
+    public static void main(String args[])
+    {
+        Scanner xx = new Scanner(System.in);
+        int n;
+        System.out.print("Enter the number of disks: ");
+        n = xx.nextInt();
+        TOH(n,'A','B','C');
+        xx.close();
+    }
+}
