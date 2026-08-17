@@ -7,7 +7,7 @@
 //1
 
 import java.util.*;
-public class patterns {
+public class pattern7 {
     public static void main(String args[]) {
         int n = 5;
 
